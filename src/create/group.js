@@ -5,7 +5,7 @@ const db = require("../db");
 const insertGroup =
     "INSERT INTO groups(name,fcom,fwage,ccom,cwage) VALUES (?,?,?,?,?)";
 const updateGroup =
-    "UPDATE groups SET name=?, fcom=?, fwage=?,ccom=?,cwage WHERE id=?";
+    "UPDATE groups SET name=?, fcom=?, fwage=?,ccom=?,cwage=? WHERE id=?";
 const deleteGroup = "DELETE FROM groups where id=?";
 const getGroup = "SELECT * FROM groups";
 const getGroupWithId = "SELECT * from groups  where id=?";
