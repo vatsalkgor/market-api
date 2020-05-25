@@ -1,6 +1,7 @@
 const express = require("express");
 const router = express.Router();
 const party = require("./create/party");
+const group = require("./create/group");
 const db = require("./db");
 
 router.post("/", (req, res, next) => {
@@ -24,5 +25,6 @@ router.post("/", (req, res) => {
 });
 
 router.use(party);
+router.use(group);
 
 module.exports = router;
